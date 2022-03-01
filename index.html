@@ -7,6 +7,10 @@
     <title>Dev Mario Portfolio Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 
 </head>
@@ -23,7 +27,7 @@
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                 <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
                 <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                <!-- <li class="nav__item"><a href="#" class="nav__link">Home</a></li> -->
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
             </ul>
         </nav>
     </header>
@@ -35,7 +39,7 @@
             Hi, I am <strong>Mario Gallardo</strong>
         </h1>
         <p class="section__subtitle section__subtitle--intro">full stack dev</p>
-        <img src="" alt="">
+        <img src="./assets/images/Graduation.jpg" alt="Profile Picture" class="intro__img">
     </section>
 
     <!-- Services offered -->
@@ -65,8 +69,10 @@
                      debitis labore velit. Reprehenderit totam libero culpa provident officiis? 
                      Enim exercitationem ex et animi non delectus veniam odit possimus!
             </div>
-
         </div>
+
+        <a href="#work" class="btn">My Work</a>
+    </section>
 
         <!-- About Me -->
         <section class="about-me" id="about">
@@ -87,15 +93,15 @@
             <p class="section__subtitle"></p>
 
             <div class="portfolio">
-                <a href="#" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
+                <a href="https://ravenclaw-penguinpost.herokuapp.com/login" class="portfolio__item">
+                    <img src="./assets/images/PenguinPost.png" alt="Login page of Penguin Post" class="portfolio__img">
                 </a>
             </div>
             
 
             <div class="portfolio">
                 <a href="#" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
+                    <img src="./assets/images/RunBuddy.png" alt="Run Buddy Homepage" class="portfolio__img">
                 </a>
             </div>
 
@@ -116,11 +122,17 @@
                     <img src="" alt="" class="portfolio__img">
                 </a>
             </div>
-
         </section>
 
-
-        <a href="#work" class="btn">My Work</a>
+        <!-- Footer -->
+        <footer>
+            <a href="mailto:mariogallardo1331@yahoo.com" class="footer-link">mariogallardo1331@yahoo.com</a>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com/mgall13">GitHub</a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/mario-gallardo/">LinkedIn</a></li>
+            </ul>
+        </footer>
+        
     </section>
 </body>
 </html>
