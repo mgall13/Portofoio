@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Mario Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/images/devmario.png" alt="devmario">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="home-nav"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="index.html#projects" class="nav__link">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <!-- double hyphen to tell that this is a modifier class -->
+        <h1 class="section__title section__title--intro">
+            The title<strong> of my project</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Twitter clone</p>
+        <img src="./assets/images/Penguin Post Snip.png" alt="" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non neque provident 
+            ipsam eius molestias. Consequatur fuga blanditiis accusamus corporis nemo aperiam
+            atque quae mollitia cum soluta, deleniti, alias esse nobis.</p>
+        <img src="./assets/images/Placeholder2.jpg">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ratione incidunt 
+            sit molestias necessitatibus dolor, earum in repellat quae magni dolore placeat
+            obcaecati voluptates doloribus, nulla voluptas culpa itaque molestiae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempora omnis
+            quaerat est eligendi placeat magni perferendis aut dignissimos, quasi necessitatibus
+            eos accusamus similique optio, libero ab ex harum et.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:mariogallardo1331@yahoo.com" class="footer__link">mariogallardo1331@yahoo.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/mgall13">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/mario-gallardo/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="./assets/index.js"></script>
+        
+</body>
+</html>

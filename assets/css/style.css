@@ -35,6 +35,10 @@
 
 /* General styling */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -177,6 +181,64 @@ header {
 .nav__link:hover {
     color: var(--clr-accent);
 }
+
+.nav-toggle {
+    padding: .5em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1000;
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .home-nav {
+    transform: rotate(.625turn);
+}
+
+.nav-open .home-nav::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .home-nav:after {
+    opacity: 0;
+}
+
+.home-nav {
+    display: block;
+    position: relative;
+}
+
+.home-nav,
+.home-nav::before,
+.home-nav::after {
+    background: var(--clr-accent);
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
+.home-nav::before,
+.home-nav::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.home-nav::before { top: 6px; }
+.home-nav::after { bottom: 6px; }
+
 
 /* Intro Section */
 
@@ -388,4 +450,11 @@ header {
 
 .social-list__link {
     padding: .5em;
+}
+
+/* Individual portfolio item */
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
 }
