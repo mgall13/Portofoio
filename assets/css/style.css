@@ -5,15 +5,15 @@
 }
 
 :root {
-    --ff-primary: 'Smooch Sans', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Lora', serif;
+    --ff-secondary: 'Roboto Slab', serif;
 
-    --fw-reg: 300;
-    --fw-bold: 900;
+    --fw-reg: 400;
+    --fw-bold: 700;
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: rgba(11, 218, 149, 0.918);
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -387,7 +387,7 @@ header {
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     overflow: hidden;
 }
 
